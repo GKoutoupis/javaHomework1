@@ -1,0 +1,17 @@
+Εργασία 1
+Άσκηση 2 
+α)myObject1.printX(); απάντηση Value of x:5
+β)myObject1.incrementCount(); απάντηση δεν θα εμφανίσει τίποτα απλά θα αυξήσει την count του myObject1 κατά 1 στιγμιαία
+γ)MyClass.incrementCount(); απάντηση  1 error 
+δ)myObject1.printCount(); απάντηση Value of count: 0 
+ε)myObject2.printCount(); απάντηση Value of count: 0 
+στ)myObject2.printX(); απάντηση Value of x:7
+ζ)myObject1.setX(14); απάντηση error
+η)myObject1.incrementCount(); απάντηση θα εμφανίσει τίποτα απλά θα αυξήσει την count του myObject1 κατά 1 στιγμιαία 
+θ)myObject1.printX(); απάντηση Value of x: 5
+ι)myObject1.printCount(); απάντηση Value of count:0
+κ)myObject2.printCount(); απάντηση Value of count:0
+
+Άσκηση 3
+α) Θα εκτυπώσει 36,0.0,Alan
+β) Θα πρέπει να γράψουμε στον κατασκευαστή σε όλες τις μεταβλητές στιγμιοτύπου this.μεταβλητή στιγμιοτύπου
