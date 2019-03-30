@@ -16,54 +16,57 @@ public class Employee{
 	}
 	public Employee(String name, int salary) {
  	this(name, salary, "Patission 76");
- }
+ 	}
  	public Employee(String name, int salary, String address) {
  	this.employeeName=name;
  	this.salary=salary;
  	this.address=address;
- }
+	 }
 
  	void disp() {
  	System.out.println("Employee Name: "+ employeeName);
  	System.out.println("Employee Salary: "+salary);
  	System.out.println("Employee Address: "+address);
- }
- public static void main(String[] args) {
- Employee obj = new Employee();
- obj.disp();
- } 
+		 }
+	 public static void main(String[] args) {
+	 Employee obj = new Employee();
+	 obj.disp();
+ 	} 
 
-}
+	}
 
 b)Καλούνται κατά αύξουσα σειρά των παραμέτρων που παίρνουν ως ορίσματα στις μεθόδους που υλοποιούν το αντικείκενο obj
 Δηλαδή πρώτα καλείται η
-public Employee(){
+
+	public Employee(){
 		this("Bob Day");
 	}
+	
 Μετά η 
-public Employee(String name){
+
+	public Employee(String name){
 		this(name,1200);
 	}
 
 Μετά
- public Employee(String name, int salary) {
+ 	public Employee(String name, int salary) {
  	this(name, salary, "Patission 76");
- }
+ 	}
 
 
 Και τέλος
 
-public Employee(String name, int salary, String address) {
+	public Employee(String name, int salary, String address) {
  	this.employeeName=name;
  	this.salary=salary;
  	this.address=address;
- }
+ 	}
 
  γ )Το τελευταίο this δεν είναι απαραίτητο καθώς έχουν ήδη δημιουργηθέι τρία instances από τον constructor 
 
- public Employee(String name, int salary) {
+ 	public Employee(String name, int salary) {
  	this(name, salary, "Patission 76");
- }
+	 }
 
 
 Άσκηση 7
@@ -91,5 +94,9 @@ public Employee(String name, int salary, String address) {
 
 
 β)Κάθε φορά που εκτελείται η επανάληψη θα δημιουργείται ένα αντικείμενο της κλάσσης Demo.Επομένως θα δημιουργηθούν 9 αντικείμενα.
+
+
 c)Θα δημιουργηθούν 9 μεταβλητές max_value επειδή ως final μπορεί να αρχικοποιηθεί μόνο μία φορά.Επομένως κάθε νέο αντικείμενο που δημιουργείται δημιουργεί και μια μεταβλητή max value .Δεν μπορούμε να ξαναδώσουμε τιμή σε μια final μεταβήτή για αυτό δημιουργείται νέα σε κάθε δημιουργία αντικειμένου obj της κλάσης Demo
+
+
 d) Θα δημιουργηθεί 1 μεταβλητή max_all.Ως static θα αλλάζει τιμή κάθε φορά που δημιουργούμε ενα νέο αντικείμενο obj της κλάσης demo .Η μεταβλητή max all κάνει ovrwrite την προηγουμενη τιμή και η νέα τιμή είναι διθέσιμη σε όλα τα instances του αντικειμένου.     
